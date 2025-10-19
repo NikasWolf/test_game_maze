@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://uynp5vl6ctmd"
+path="res://.godot/imported/16 Bit — 1x1= Won (1987) (www.lightaudio.ru).mp3-df57b31c6c71e76aeb980aafa531a6e4.mp3str"
+
+[deps]
+
+source_file="res://musik/16 Bit — 1x1= Won (1987) (www.lightaudio.ru).mp3"
+dest_files=["res://.godot/imported/16 Bit — 1x1= Won (1987) (www.lightaudio.ru).mp3-df57b31c6c71e76aeb980aafa531a6e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

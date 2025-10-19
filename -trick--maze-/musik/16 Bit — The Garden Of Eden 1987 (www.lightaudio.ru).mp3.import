@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dweg13vqd3ncq"
+path="res://.godot/imported/16 Bit — The Garden Of Eden 1987 (www.lightaudio.ru).mp3-9e8499a6c0861f9985ec2a8907231dd5.mp3str"
+
+[deps]
+
+source_file="res://musik/16 Bit — The Garden Of Eden 1987 (www.lightaudio.ru).mp3"
+dest_files=["res://.godot/imported/16 Bit — The Garden Of Eden 1987 (www.lightaudio.ru).mp3-9e8499a6c0861f9985ec2a8907231dd5.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

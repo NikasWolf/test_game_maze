@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cd1a2kei0ojch"
+path="res://.godot/imported/16 bit — 1987 (www.lightaudio.ru)1.mp3-7b233745eab598451155f539dec90d17.mp3str"
+
+[deps]
+
+source_file="res://musik/16 bit — 1987 (www.lightaudio.ru)1.mp3"
+dest_files=["res://.godot/imported/16 bit — 1987 (www.lightaudio.ru)1.mp3-7b233745eab598451155f539dec90d17.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

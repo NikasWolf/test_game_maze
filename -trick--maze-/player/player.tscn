@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmw6gcxlacggk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqu6x"]
+
+[node name="player" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kqu6x")

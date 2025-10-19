@@ -1,0 +1,791 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7cbr4hbdmbpp"]
+
+[ext_resource type="Texture2D" uid="uid://bamomxqpsrp8j" path="res://Texture/texture_laberint_10.png" id="1_an1pd"]
+[ext_resource type="Script" uid="uid://djof38efmdwyn" path="res://game/static_body_2d.gd" id="2_1lglu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_an1pd"]
+texture = ExtResource("1_an1pd")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1lglu"]
+sources/0 = SubResource("TileSetAtlasSource_an1pd")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82p3m"]
+texture = ExtResource("1_an1pd")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_qnmtw"]
+sources/0 = SubResource("TileSetAtlasSource_82p3m")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_18eki"]
+radius = 7.1258526
+
+[node name="TileMapLayer" type="TileMapLayer"]
+physics_interpolation_mode = 1
+light_mask = 2
+texture_filter = 1
+position = Vector2(13, 125)
+scale = Vector2(3, 3)
+tile_set = SubResource("TileSet_1lglu")
+
+[node name="TileMapLayer20" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288, 303.6667)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer20"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer20/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer5" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(224.33333, -16)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer5"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer5/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer6" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-64, 0)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer6"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer6/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer7" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-80, -96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer7"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer7/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer8" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-80, -160)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer8"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer8/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer4" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(176.00003, 64)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer4"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer4/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer3" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(144, 113)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer3"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer3/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer9" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(112, -144)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer9"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer9/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer10" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-48, -112)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer10"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer10/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer11" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-32, -96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer11"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer11/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer12" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(288, -112)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer12"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer12/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer13" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(31.99999, -208)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer13"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer13/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer14" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-16, -240)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer14"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer14/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer15" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288.33334, -208)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer15"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer15/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer16" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-272, -208)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer16"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer16/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer17" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(64.33336, -63.666668)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer17"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer17/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer18" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(112.00002, -64)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer18"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer18/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer19" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288, -128)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer19"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer19/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer21" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-272, 224)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer21"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer21/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer22" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288, 160)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer22"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer22/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer23" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-272, 128)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer23"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer23/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer24" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288, 96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer24"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer24/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer25" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-288, -64)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer25"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer25/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer26" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-272.00003, -96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer26"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer26/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer27" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-287.6667, 400)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer27"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer27/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer28" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-272, 432)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer28"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer28/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer29" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-175.99998, 448)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer29"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer29/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer30" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-32, 432)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer30"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer30/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer31" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(16, 448)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer31"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer31/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer32" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(80, 448.00003)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer32"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer32/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer33" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-80, 352)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer33"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer33/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer34" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(144, 432)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer34"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer34/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer35" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(176.00002, 448)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer35"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer35/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer36" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(224, 432.33334)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer36"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer36/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer37" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(272, 448)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer37"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer37/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer38" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(416.33334, 448)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer38"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer38/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer39" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(336.33334, 336)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer39"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer39/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer41" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(464, 176)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer41"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer41/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer42" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-192, 272)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer42"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer42/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer43" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(0, 256)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer43"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer43/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer44" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(160, 287.6667)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer44"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer44/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer45" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(256, 240)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer45"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer45/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer46" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-192.33333, 96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer46"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer46/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer47" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-128, 48.333336)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer47"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer47/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer48" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-96, 96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer48"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer48/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer49" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(-160.00002, -128)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer49"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer49/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer50" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(80, 192)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer50"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer50/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer51" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(272, 128)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer51"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer51/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer52" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(384, 96)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer52"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer52/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer53" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(496.00003, -64)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer53"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer53/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer54" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(400, -208)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer54"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer54/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer55" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(224.00002, -208)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer55"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer55/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer56" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(240, -288)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer56"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer56/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
+
+[node name="TileMapLayer57" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(464, -304)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0)
+tile_set = SubResource("TileSet_qnmtw")
+
+[node name="яма" type="StaticBody2D" parent="TileMapLayer57"]
+collision_layer = 4
+script = ExtResource("2_1lglu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer57/яма"]
+position = Vector2(7.3333282, 8.333336)
+shape = SubResource("CircleShape2D_18eki")
